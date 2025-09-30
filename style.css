@@ -7,3 +7,98 @@
 html {
   font-size: 10px;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  font-family: "Baloo 2", sans-serif;
+}
+
+.nav__bar {
+  width: 100%;
+  background-color: #1e1e1e;
+}
+
+.nav__bar__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav__links {
+  display: flex;
+  gap: 30px;
+
+  list-style: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  position: relative;
+
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  transition: 0.2s ease-in-out;
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #ff5c5c;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav__link:hover {
+  color: #ff5c5c;
+}
+
+.nav__link:hover::after {
+  width: 100%;
+}
+
+.nav__link:hover {
+  color: #ff5c5c;
+}
+
+.tg__btn {
+  display: flex;
+  align-items: center;
+
+  padding: 7px 20px;
+  gap: 4px;
+
+  font-size: 2rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: #1e1e1e;
+
+  border-radius: 5px;
+
+  background-color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+.tg__btn:hover {
+  scale: 1.05;
+}
+
+.tg__btn:active {
+  scale: 0.95;
+}
