@@ -21,6 +21,10 @@ body {
   margin: 0 auto;
 }
 
+.red {
+  color: #ff5c5c;
+}
+
 /* NAVBAR */
 .nav__bar {
   background-color: #1e1e1e;
@@ -106,3 +110,50 @@ body {
 }
 
 /* HEADER */
+
+.header {
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header__inner {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  padding: 70px 100px;
+}
+
+.header__inner__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.header__inner__content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 5px;
+  line-height: 130%;
+}
+
+.header__inner__content p {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 130%;
+}
+
+.header__inner__photo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__inner__photo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain; /* или cover, если хотите, чтобы оно полностью заполняло контейнер */
+}
