@@ -10,6 +10,8 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+
+  background-color: #fafaf5;
 }
 
 .container {
@@ -19,21 +21,25 @@ body {
   margin: 0 auto;
 }
 
-.header {
-  width: 100%;
-  font-family: "Baloo 2", sans-serif;
-}
-
+/* NAVBAR */
 .nav__bar {
-  width: 100%;
   background-color: #1e1e1e;
+  width: 100%;
 }
 
 .nav__bar__inner {
+  width: 100%;
+  padding: 16px 20px 17px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+
+  font-family: "Baloo 2", sans-serif;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
 }
 
 .nav__links {
@@ -44,54 +50,50 @@ body {
 }
 
 .nav__link {
-  text-decoration: none;
   position: relative;
-
-  color: #fff;
   font-size: 2rem;
   font-weight: 800;
-  transition: 0.2s ease-in-out;
+  color: #fff;
+
+  text-decoration: none;
 }
 
-.nav__link::after {
+.nav__link:hover {
+  color: #ff5c5c;
+}
+
+.nav__link::before {
   content: "";
   position: absolute;
-  left: 0;
+  width: 0;
+  height: 4px;
   bottom: 0;
-  width: 0%;
-  height: 3px;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #ff5c5c;
-  transition: width 0.3s ease-in-out;
+
+  transition: 0.3s ease-in-out;
 }
 
-.nav__link:hover {
-  color: #ff5c5c;
-}
-
-.nav__link:hover::after {
+.nav__link:hover::before {
   width: 100%;
-}
-
-.nav__link:hover {
-  color: #ff5c5c;
 }
 
 .tg__btn {
   display: flex;
+  justify-content: center;
   align-items: center;
-
-  padding: 7px 20px;
-  gap: 4px;
-
-  font-size: 2rem;
-  font-weight: 800;
-  text-decoration: none;
-  color: #1e1e1e;
-
-  border-radius: 5px;
+  gap: 5px;
 
   background-color: #fff;
+
+  padding: 7px 20px;
+  border-radius: 5px;
+
+  font-size: 2rem;
+  text-decoration: none;
+  color: #1e1e1e;
+  font-weight: 800;
+
   transition: 0.2s ease-in-out;
 }
 
@@ -102,3 +104,5 @@ body {
 .tg__btn:active {
   scale: 0.95;
 }
+
+/* HEADER */
