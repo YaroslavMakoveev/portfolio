@@ -97,3 +97,9 @@
     height: 80px;
   }
 }
+
+@media (max-width: 385px) {
+  .skills__container {
+    grid-template-columns: 115px 115px;
+  }
+}
