@@ -197,19 +197,41 @@ body {
 
   border: 1px solid #fff;
   border-radius: 5px;
-
-  transition: 0.2s ease-in-out;
 }
 
 .skill img {
   width: 120px;
   height: 120px;
   color: #000;
+  transition: 0.2s ease-in-out;
+  transform-origin: center bottom;
+}
+
+.skill img:hover {
+  animation: sway 1s infinite ease-in-out;
 }
 
 .skill:hover {
   scale: 1.05;
   border: none;
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .skill:hover:nth-child(1) {
@@ -309,6 +331,13 @@ body {
   font-size: 2rem;
 
   border-radius: 5px;
+
+  transition: 0.2s ease-in-out;
+}
+
+.git__btn:hover {
+  background-color: #ff5c5c;
+  color: #fff;
 }
 
 /* FOOTER */
