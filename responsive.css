@@ -3,6 +3,10 @@
     grid-template-columns: 1fr;
   }
 
+  .header__inner__content h1 {
+    font-size: 3.3rem;
+  }
+
   .header__inner__photo {
     justify-content: center;
     margin-top: 20px;
@@ -12,6 +16,10 @@
 @media (max-width: 885px) {
   .nav__links {
     display: none;
+  }
+
+  .header__inner {
+    padding: 30px 50px;
   }
 
   .header__inner__content {
@@ -26,4 +34,7 @@
     font-size: 1.5rem;
     line-height: 170%;
   }
+}
+
+@media (max-width: 800px) {
 }
