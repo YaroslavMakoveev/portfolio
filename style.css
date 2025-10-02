@@ -155,5 +155,79 @@ body {
   max-width: 100%;
   height: auto;
   display: block;
-  object-fit: contain; /* или cover, если хотите, чтобы оно полностью заполняло контейнер */
+  object-fit: contain;
+}
+
+.skills {
+  width: 100%;
+  background-color: #1e1e1e;
+}
+
+.skills__inner {
+  padding: 25px 10px;
+}
+
+.skills__header {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  font-family: "Baloo 2", sans-serif;
+  letter-spacing: 3px;
+}
+
+.skills__container {
+  display: grid;
+  grid-template-columns: 155px 155px 155px 155px 155px 155px;
+  gap: 30px;
+  justify-content: center;
+
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.skill {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #fff;
+  border-radius: 5px;
+
+  transition: 0.2s ease-in-out;
+}
+
+.skill img {
+  width: 120px;
+  height: 120px;
+  color: #000;
+}
+
+.skill:hover {
+  scale: 1.05;
+  border: none;
+}
+
+.skill:hover:nth-child(1) {
+  background-color: #e34f26;
+}
+
+.skill:hover:nth-child(2) {
+  background-color: #1572b6;
+}
+
+.skill:hover:nth-child(3) {
+  background-color: #f7df1e;
+}
+
+.skill:hover:nth-child(4) {
+  background-color: #61dafb;
+}
+
+.skill:hover:nth-child(5) {
+  background-color: #ff6c37;
+}
+
+.skill:hover:nth-child(6) {
+  background-color: #a259ff;
 }
