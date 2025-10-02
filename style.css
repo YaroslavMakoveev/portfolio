@@ -256,6 +256,7 @@ body {
   gap: 50px;
 
   padding: 20px;
+  margin: 0px 20px;
 
   border-radius: 5px;
 
@@ -301,9 +302,38 @@ body {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  text-align: center;
 
   color: #1e1e1e;
   font-size: 2rem;
 
   border-radius: 5px;
+}
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  background-color: #1e1e1e;
+
+  padding: 18px 20px;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__contacts {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__contacts a {
+  transition: 0.2s ease-in-out;
+}
+
+.footer__contacts a:hover {
+  scale: 1.1;
 }
